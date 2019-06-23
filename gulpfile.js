@@ -1,4 +1,5 @@
 const gulp = require("gulp");
+const cleanCSS = require('gulp-clean-css');
 const pug = require("gulp-pug");
 const sass = require("gulp-sass");
 const prefix = require("gulp-autoprefixer");
@@ -10,7 +11,7 @@ const concat = require('gulp-concat');
 
 var paths = {
   styles: {
-    src: ["node_modules/bootstrap/scss/bootstrap.scss", "src/sass/**/*.scss"],
+    src: ["src/sass/**/*.scss"],
     dest: "build/styles"
   },
   pug: {
@@ -61,6 +62,7 @@ gulp.task('styles', function() {
     .pipe(sourcemaps.init())
     .pipe(sass(sassOptions).on("error", sass.logError))
     .pipe(prefix())
+    .pipe(cleanCSS())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.styles.dest));
   return stream;

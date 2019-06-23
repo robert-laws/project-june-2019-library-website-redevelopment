@@ -1,0 +1,28 @@
+$primary: #041e42;
+$secondary: #63666a;
+
+$secondary-dark-blue: #012169;
+$secondary-light-blue: #003da5;
+$secondary-cool-gray: #bbbcbc;
+$secondary-gray: #d6d2c4;
+
+$tertiary-blue: #00b5e2;
+$tertiary-green: #64a70b;
+$tertiary-red: #d50032;
+$tertiary-crimson: #862633;
+$tertiary-yellow: #f8e08e;
+
+$theme-colors: (
+  "secondary-dark-blue": $secondary-dark-blue,
+  "secondary-light-blue": $secondary-light-blue,
+  "secondary-cool-gray": $secondary-cool-gray,
+  "secondary-gray": $secondary-gray,
+  "tertiary-blue": $tertiary-blue,
+  "tertiary-green": $tertiary-green,
+  "tertiary-red": $tertiary-red,
+  "tertiary-crimson": $tertiary-crimson,
+  "tertiary-yellow": $tertiary-yellow
+);
+
+$enable-responsive-font-sizes: true;
+$rfs-base-font-size: 1rem;
