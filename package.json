@@ -1,0 +1,32 @@
+{
+  "name": "project-june-2019-library-website-redevelopment",
+  "version": "1.0.0",
+  "description": "Bootstrap and Sass",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-laws/project-june-2019-library-website-redevelopment.git"
+  },
+  "keywords": [
+    "bootstrap4",
+    "sass"
+  ],
+  "author": "Robert Laws",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robert-laws/project-june-2019-library-website-redevelopment/issues"
+  },
+  "homepage": "https://github.com/robert-laws/project-june-2019-library-website-redevelopment#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "parcel-bundler": "^1.12.3",
+    "popper.js": "^1.15.0",
+    "sass": "^1.21.0"
+  }
+}

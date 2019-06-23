@@ -1,0 +1,17 @@
+// Google Font - Heebo
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700&display=swap');
+
+// Font-Awesome Free
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+// Customizations
+@import "./custom";
+
+// Bootstrap 4
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.alt-font {
+  font-family: 'Heebo', sans-serif;
+  font-weight: bold;
+  color: $tertiary-green;
+}
