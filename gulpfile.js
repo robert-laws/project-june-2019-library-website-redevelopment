@@ -40,9 +40,6 @@ gulp.task('clean', function() {
 gulp.task('scripts', function() {
   var stream = gulp.src(paths.scripts.src)
     .pipe(sourcemaps.init())
-    .pipe(babel({
-        presets: ['@babel/env']
-    }))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.scripts.dest));
   return stream;
