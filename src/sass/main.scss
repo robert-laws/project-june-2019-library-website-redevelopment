@@ -8,8 +8,13 @@
 @import "abstracts/colors";
 @import "abstracts/typography";
 
+// MIXINS
+@import "mixins/media.scss";
+
 // CUSTOM
 @import "custom/custom";
+@import "custom/header";
+@import "custom/navigation";
 
 // Bootstrap 4
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";

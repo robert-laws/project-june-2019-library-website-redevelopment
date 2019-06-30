@@ -1,14 +1,21 @@
 doctype html
 html
   head
-    title Bootstrap 4 - Learning
+    title Library Website - Redevelopment
     include ../includes/head.pug
   body
+    include ../includes/css.pug
     include ../includes/header.pug
+    include ../includes/navigation.pug
 
     main
+      // site data
       include ../data/side-nav-links.pug
+
+      // mixins
       include ../mixins/side-nav.pug
+
       block content
 
     include ../includes/footer.pug
+    include ../includes/scripts.pug

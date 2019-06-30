@@ -1,0 +1,41 @@
+/*! start header section */
+.library-header {
+  $self: &;
+
+  background-color: $primary;
+
+  &__logo {
+    padding: 0.5rem;
+
+    img {
+      width: 500px;
+      
+      @include media-respond-down(md) {
+        width: 400px;
+      }
+    }
+  }
+
+
+  &__links {
+    font-size: 0.8rem;
+    
+    a {  
+      padding: 0.8rem;
+      height: 100%;
+    }
+
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $color-white;
+    }
+
+    a:hover,
+    a:active {
+      color: $primary;
+      background-color: $secondary-cool-gray;
+    }
+  }
+}
+/*! end header section */
