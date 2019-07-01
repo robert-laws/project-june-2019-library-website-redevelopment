@@ -157,6 +157,13 @@
       @include media-respond-down(md) {
         margin-bottom: 2rem;
       }
+
+      img {
+        
+        &:hover {
+          filter: opacity(0.85);
+        }
+      }
     }
   }
 }
