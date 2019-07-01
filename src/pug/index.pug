@@ -18,15 +18,70 @@ block content
               a(class="nav-link" id="course-tab" data-toggle="tab" href="#course" role="tab" aria-controls="course" aria-selected="false") Course Reserves
           div(class="tab-content" id="myTabContent")
             div(class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab")
-              p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur temporibus beatae nesciunt ullam velit soluta sed quia officia sapiente corrupti accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+              section(class="container") 
+                form(id="hoyaSearchForm")
+                  div(class="row no-gutters mt-3")
+                    div(class="col-md-7 mr-2 mb-2")
+                      label(class="sr-only" for="hoyaSearchText") Search Text
+                      input(id="hoyaSearchText" type="text" class="form-control" placeholder="Search Here")
+                    div(class="col-md-3 mr-2 mb-2")
+                      label(class="sr-only" for="hoyaSearchType")
+                      select(class="custom-select" id="hoyaSearchType")
+                        option(value="everything") Everything
+                        option(value="course-reserves") Course Reserves
+                    div(class="col-md-1")
+                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                div(class="row tips d-flex justify-content-between")
+                  a(href="#") advanced search
+                  a(href="#") what am I searching?
             div(class="tab-pane fade" id="databases" role="tabpanel" aria-labelledby="databases-tab")
-              p Voluptas aspernatur voluptatem iusto saepe vitae nemo beatae accusamus rerum a enim. accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+              section(class="container")
+                form(id="databasesForm") 
+                  div(class="row no-gutters mt-3")
+                    div(class="col-md-10 mr-2 mb-2")
+                      label(class="sr-only" for="databasesText") Search Text
+                      input(id="databasesText" type="text" class="form-control" placeholder="Search Here")
+                    div(class="col-md-1")
+                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                div(class="row tips d-flex justify-content-between")
+                  span &nbsp;
+                  a(href="#") what am I searching?
             div(class="tab-pane fade" id="journals" role="tabpanel" aria-labelledby="journals-tab")
-              p Soluta sed quia officia sapiente corrupti accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+              section(class="container")
+                form(id="journalsForm") 
+                  div(class="row no-gutters mt-3")
+                    div(class="col-md-10 mr-2 mb-2")
+                      label(class="sr-only" for="journalsText") Search Text
+                      input(id="journalsText" type="text" class="form-control" placeholder="Search Here")
+                    div(class="col-md-1")
+                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                div(class="row tips d-flex justify-content-between")
+                  span &nbsp;
+                  a(href="#") what am I searching?
             div(class="tab-pane fade" id="scholar" role="tabpanel" aria-labelledby="scholar-tab")
-              p Soluta sed quia officia sapiente corrupti accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+              section(class="container")
+                form(id="googleScholarForm") 
+                  div(class="row no-gutters mt-3")
+                    div(class="col-md-10 mr-2 mb-2")
+                      label(class="sr-only" for="googleScholarText") Search Text
+                      input(id="googleScholarText" type="text" class="form-control" placeholder="Search Here")
+                    div(class="col-md-1")
+                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                div(class="row tips d-flex justify-content-between")
+                  span &nbsp;
+                  a(href="#") what am I searching?
             div(class="tab-pane fade" id="course" role="tabpanel" aria-labelledby="course-tab")
-              p Soluta sed quia officia sapiente corrupti accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+              section(class="container")
+                form(id="courseReservesForm") 
+                  div(class="row no-gutters mt-3")
+                    div(class="col-md-10 mr-2 mb-2")
+                      label(class="sr-only" for="courseReservesText") Search Text
+                      input(id="courseReservesText" type="text" class="form-control" placeholder="Search Here")
+                    div(class="col-md-1")
+                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                div(class="row tips d-flex justify-content-between")
+                  span &nbsp;
+                  a(href="#") what am I searching?
       div(class="col-lg-4 col-md-12")
         div(class="home-page__quick-links")
           section
