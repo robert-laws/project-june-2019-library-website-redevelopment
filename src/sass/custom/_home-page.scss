@@ -1,3 +1,118 @@
 .home-page {
+  margin: 2rem 0 1rem;
 
+  &__search {
+    padding: 1rem;
+    height: 400px;
+    background-image: url('/images/home-search-fade-bg-2x.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    margin-bottom: 1rem;
+
+    @include media-respond-down(md) {
+      margin-bottom: 2rem;
+      height: auto;
+    }
+
+    .lib-search {
+      margin-top: 3rem;
+
+      @include media-respond-down(md) {
+        margin-top: 0;
+      }
+    }
+
+    .tab-content {
+      border-bottom: 1px solid #dee2e6;
+      border-right: 1px solid #dee2e6;
+      border-left: 1px solid #dee2e6;
+    
+      .tab-pane {
+        background-color: $color-white;
+        padding: 1rem;
+        min-height: 8rem;
+      }
+    }
+    
+    .nav-tabs {
+      .nav-link {
+        background-color: rgb(222, 239, 245);
+        margin-right: 0.3rem;
+        color: $secondary;
+    
+        &.active {
+          color: $primary;
+        }
+      }
+    }
+    
+    .list-group-item-action {
+      &.active {
+        &:hover {
+          background-color: #007bff;
+        }
+      }
+      
+      &:hover {
+        background-color: rgb(222, 239, 245);
+      }
+    }
+  }
+
+  &__quick-links {
+    background-color: $secondary-dark-blue;
+    border: 4px solid $secondary;
+
+    section a {
+      text-decoration: none;
+    }
+
+    section a > .alert {
+      padding: 0.65rem 1rem;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border-radius: 0;
+      margin: 1rem;
+      color: $secondary;
+
+      &:hover {
+        background-color: lighten($light-blue, 20%);
+        color: darken($secondary, 45%);
+      }
+
+      i {
+        margin-right: 0.3rem;
+      }
+
+      .lib-hours {
+        margin-left: 0.3rem;
+      }
+    }
+
+    margin-bottom: 1rem;
+
+    @include media-respond-down(md) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__square {
+    header {
+      background-color: $primary;
+      color: $color-white;
+      text-align: center;
+      padding: 0.5rem 0;
+      margin-bottom: 0.5rem;
+    }
+
+    section {
+      margin-bottom: 1rem;
+
+      @include media-respond-down(md) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
 }

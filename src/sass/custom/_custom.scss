@@ -9,30 +9,6 @@ main {
   margin-top: 1em;
 }
 
-// tabbed content
-.tab-content {
-  border-bottom: 1px solid #dee2e6;
-  border-right: 1px solid #dee2e6;
-  border-left: 1px solid #dee2e6;
-
-  .tab-pane {
-    padding: 1rem;
-    min-height: 8rem;
-  }
-}
-
-// tabbed content - tabs
-.nav-tabs {
-  .nav-link {
-    background-color: $secondary-gray;
-    margin-right: 0.3rem;
-
-    &.active {
-      font-weight: bold;
-    }
-  }
-}
-
 // side navigation -> on all subpages
 .list-group {
   .list-group-item-action {

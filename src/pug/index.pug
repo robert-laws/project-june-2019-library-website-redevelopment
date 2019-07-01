@@ -3,20 +3,98 @@ extends layouts/default.pug
 block content
   div(class="container home-page")
     div(class="row")
-      div(class="col-md-8")
-        p search
-      div(class="col-md-4")
-        p quick links
+      div(class="col-lg-8 col-md-12")
+        div(class="home-page__search")
+          ul(class="nav nav-tabs lib-search" id="myTab" role="tablist")
+            li(class="nav-item")
+              a(class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true") HoyaSearch
+            li(class="nav-item")
+              a(class="nav-link" id="databases-tab" data-toggle="tab" href="#databases" role="tab" aria-controls="databases" aria-selected="false") Databases
+            li(class="nav-item")
+              a(class="nav-link" id="journals-tab" data-toggle="tab" href="#journals" role="tab" aria-controls="journals" aria-selected="false") Journals
+            li(class="nav-item")
+              a(class="nav-link" id="scholar-tab" data-toggle="tab" href="#scholar" role="tab" aria-controls="scholar" aria-selected="false") Google Scholar
+            li(class="nav-item")
+              a(class="nav-link" id="course-tab" data-toggle="tab" href="#course" role="tab" aria-controls="course" aria-selected="false") Course Reserves
+          div(class="tab-content" id="myTabContent")
+            div(class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab")
+              p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, consectetur temporibus beatae nesciunt ullam velit soluta sed quia officia sapiente corrupti accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+            div(class="tab-pane fade" id="databases" role="tabpanel" aria-labelledby="databases-tab")
+              p Voluptas aspernatur voluptatem iusto saepe vitae nemo beatae accusamus rerum a enim. accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+            div(class="tab-pane fade" id="journals" role="tabpanel" aria-labelledby="journals-tab")
+              p Soluta sed quia officia sapiente corrupti accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+            div(class="tab-pane fade" id="scholar" role="tabpanel" aria-labelledby="scholar-tab")
+              p Soluta sed quia officia sapiente corrupti accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+            div(class="tab-pane fade" id="course" role="tabpanel" aria-labelledby="course-tab")
+              p Soluta sed quia officia sapiente corrupti accusantium fuga rerum, accusamus dolorum culpa ea ad voluptate.
+      div(class="col-lg-4 col-md-12")
+        div(class="home-page__quick-links")
+          section
+            a(href="#") 
+              div(class="alert alert-light")
+                i(class="far fa-clock")
+                span Today's Hours:
+                span(class="lib-hours") 9am - 4pm
+          section
+            a(href="#") 
+              div(class="alert alert-light")
+                i(class="far fa-calendar-times")
+                | Reserve a Room
+          section
+            a(href="#") 
+              div(class="alert alert-light") 
+                i(class="far fa-calendar-check")
+                | Book Writing Center Appointment
+          section
+            a(href="#") 
+              div(class="alert alert-light") 
+                i(class="fas fa-desktop")
+                | Canvas
+          section
+            a(href="#") 
+              div(class="alert alert-light") 
+                i(class="fas fa-book")
+                | Main Campus Library
+          section
+            a(href="#") 
+              div(class="alert alert-light") 
+                i(class="fas fa-exchange-alt")
+                | Interlibrary Loan
     div(class="row")
-      div(class="col-md-4")
-        div(square)
+      div(class="col-md-4 col-sm-12")
+        div(class="home-page__square")
           header Gem of the Week
           section
             a(href="#")
-              img(src="/images/lynda-2x.png")
-      div(class="col-md-4")
-      div(class="col-md-4")
+              img(src="/images/lynda-2x.png" class="img-fluid")
+      div(class="col-md-4 col-sm-12")
+        div(class="home-page__square")
+          header Undergraduates
+          section
+            a(href="#")
+              img(src="/images/lynda-2x.png" class="img-fluid")
+      div(class="col-md-4 col-sm-12")
+        div(class="home-page__square")
+          header Faculty
+          section
+            a(href="#")
+              img(src="/images/lynda-2x.png" class="img-fluid")
     div(class="row")
-      div(class="col-md-4")
-      div(class="col-md-4")
-      div(class="col-md-4")
+      div(class="col-md-4 col-sm-12")
+        div(class="home-page__square")
+          header Staff
+          section
+            a(href="#")
+              img(src="/images/lynda-2x.png" class="img-fluid")
+      div(class="col-md-4 col-sm-12")
+        div(class="home-page__square")
+          header Alumni
+          section
+            a(href="#")
+              img(src="/images/lynda-2x.png" class="img-fluid")
+      div(class="col-md-4 col-sm-12")
+        div(class="home-page__square")
+          header Visitors
+          section
+            a(href="#")
+              img(src="/images/lynda-2x.png" class="img-fluid")
