@@ -1,11 +1,22 @@
 extends layouts/default.pug
 
 block content
-  div(class="container")
+  div(class="container home-page")
     div(class="row")
-      div(class="col")
-        h1(class="text-tertiary-green") Library Website
-        h2(class="text-secondary-cool-gray") Subtitle Text
-        span(style="font-size: 48px; color: #d50032;")
-          i(class="fas fa-camera")
-        p("text-primary") Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum sequi beatae illo est.
+      div(class="col-md-8")
+        p search
+      div(class="col-md-4")
+        p quick links
+    div(class="row")
+      div(class="col-md-4")
+        div(square)
+          header Gem of the Week
+          section
+            a(href="#")
+              img(src="/images/lynda-2x.png")
+      div(class="col-md-4")
+      div(class="col-md-4")
+    div(class="row")
+      div(class="col-md-4")
+      div(class="col-md-4")
+      div(class="col-md-4")

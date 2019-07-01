@@ -27,7 +27,7 @@
     }
   
     .navbar .dropdown-menu {
-      width:100vw;
+      width: 100vw;
       position: absolute;
       top: 45px;  
       left: 50%;
@@ -38,12 +38,19 @@
       border-left: none;
       border-right: none;
       border-bottom: 1px solid lighten($secondary, 45%);
-      background-color: #fff;  
+      background-color: #fff;
+
+      display: block; 
+      visibility: hidden;
+      opacity: 0 ;
     }
 
     .navbar .dropdown:hover .dropdown-menu, 
     .navbar .dropdown .dropdown-menu:hover {
-      display: block !important;
+      // display: block !important;
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 200ms ease-in;
     }
   }
 }
