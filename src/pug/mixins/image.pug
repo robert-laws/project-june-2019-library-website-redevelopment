@@ -1,0 +1,5 @@
+mixin image(url, alt, caption, size)
+  div(class="card" class=size)
+    img(src=url class="card-img-top" alt=alt)
+    div(class="card-body")
+      p(class="card-text")= caption

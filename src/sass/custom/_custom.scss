@@ -10,16 +10,3 @@ main {
 }
 
 // side navigation -> on all subpages
-.list-group {
-  .list-group-item-action {
-    &.active {
-      &:hover {
-        background-color: $primary;
-      }
-    }
-    
-    &:hover {
-      background-color: lighten($secondary-gray, 15%);
-    }
-  }
-}

@@ -8,6 +8,13 @@
     border: none;
   }
 
+  @include media-respond-down(sm) {
+    .navbar-collapse {
+      margin-top: 0.65rem;
+      border-top: 1px solid lighten($secondary, 45%);
+    }
+  }
+
   @include media-respond-up(lg) {
     .navbar-nav {
       width: 100%;
@@ -33,6 +40,7 @@
       top: 45px;  
       left: 50%;
       transform: translate(-50%, 0%);
+      padding: 1.5rem 0;
 
       border-radius: 0px;
       border-top: 1px solid lighten($secondary, 45%);
@@ -46,7 +54,7 @@
       opacity: 0;
 
       .nav-item {
-        margin: 0.5rem 0;
+        margin: 0.5rem 0 0.5rem 2.6rem;
         font-weight: bold;
         text-transform: uppercase;
         font-size: 0.8rem;

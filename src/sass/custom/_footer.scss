@@ -1,6 +1,7 @@
 /*! start footer section */
 .library-footer {
   $self: &;
+  margin-top: 1rem;
 
   &__main-footer {
     background-color: $primary;

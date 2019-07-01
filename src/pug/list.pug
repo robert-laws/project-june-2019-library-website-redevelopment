@@ -1,11 +1,9 @@
 extends layouts/default.pug
 
 block content
-  div(class="container")
-    div(class="row")
-      div(class="col")
-        hr
+  +page-header('Articles', 'Research')
 
+  div(class="container")
     div(class="row")
       div(class="col-md-3")        
         +side-nav('Articles', navResearch)
