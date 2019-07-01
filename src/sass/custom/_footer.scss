@@ -68,7 +68,7 @@
 
     .footer-logo {      
       @include media-respond-down(sm) {
-        text-align: left;
+        text-align: center;
         margin-left: 0.1rem;
       }
     }
@@ -82,6 +82,21 @@
         content: '|';
         color: #621A0C;
         margin-left: 1.5rem;
+      }
+
+      @include media-respond-down(sm) {
+        flex-direction: column;
+        text-align: center;
+
+        .link {
+          border-bottom: 1px solid darken($tertiary-red, 2%);
+        }
+
+        .link:not(:last-child) > a:after {
+          content: ' ';
+          color: #621A0C;
+          margin-left: 0;
+        }
       }
     }
 
