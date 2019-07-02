@@ -1,0 +1,18 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Visitors', 'parent')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Visitors', navPopulations)
+
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Visitors
+
+        p Visitors are welcome to come in and use the library space. Resources can be used within the library only.
+        p Sign-up with the 
+          a(href="http://www.qnl.qa/") Qatar National Library 
+          | to access their extensive information resources in a wide variety of subjects.
+        img(src="/images/qnl-brand.jpg" class="img-responsive")

@@ -1,0 +1,62 @@
+extends layouts/default.pug
+
+block content
+  +page-header('GU-Q Staff', 'parent')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('GU-Q Staff', navPopulations)
+
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 GU-Q Staff
+
+        div(class="container content-page__content__link-list")
+          div(class="row")
+            div(class="col-md-3")
+              h5 Circulation
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="borrowing") Borrowing
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="https://wrlc-gu.primo.exlibrisgroup.com/primaws/suprimaExtLogin?institution=01WRLC_GUNIV&lang=undefined&target-url=https%3A%2F%2Fwrlc-gu.primo.exlibrisgroup.com%2Fdiscovery%2Fsearch%3Fvid%3D01WRLC_GUNIV%3AQATAR&authenticationProfile=SAML&idpCode=SAML&auth=SAML&view=01WRLC_GUNIV%3AQATAR&isSilent=false") Renewing
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="interlibrary-loans") Interlibrary Loans
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="course-reserves") Course Reserves
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="equipment-and-software") Equipment and Software
+            div(class="col-md-3")
+              h5 Spaces
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="study-spaces") Study Spaces
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="assistive-technology") Assistive Technology
+            div(class="col-md-3")
+              h5 Research
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="http://guides.sfsq.georgetown.edu/az.php?a=all") Databases
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="http://guides.qatar.georgetown.edu/home/general") General Guides             
+            div(class="col-md-3")
+              h5 Other Resources
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="http://guides.qatar.georgetown.edu/home/writing") Writing
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="http://guides.qatar.georgetown.edu/home/citing") Citing
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="http://guides.qatar.georgetown.edu/home/presenting") Presenting
+              div(class="card bg-primary text-light-link mt-4")
+                div(class="card-body")
+                  a(href="online-learning") Online Learning

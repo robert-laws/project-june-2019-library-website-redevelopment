@@ -133,6 +133,26 @@
       }
     }
 
+    &__link-list {
+      .card {
+        &:hover {
+          background-color: $secondary-light-blue !important;
+        }
+      }
+
+      a {
+        &:link,
+        &:visited {
+          color: $color-white;
+        }
+
+        &:hover,
+        &:active {
+          color: $color-white;
+        }
+      }
+    }
+
     &__side-content {
       margin-top: 4rem;
 

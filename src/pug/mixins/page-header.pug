@@ -2,7 +2,10 @@ mixin page-header(page, group)
   div(class="container page-header")
     div(class="row d-flex justify-content-between align-items-center")
       div(class="col-md-6 col-sm-12 page-header__title")
-        div(class="float-left")= group
+        if group == "parent"
+          div(class="float-left")= page
+        else
+          div(class="float-left")= group
       div(class="col-md-6 col-sm-12 page-header__breadcrumbs")
         nav(aria-label="breadcrumb")
           ol(class="breadcrumb float-right")
@@ -12,7 +15,7 @@ mixin page-header(page, group)
               li(class="breadcrumb-item active" aria-current="page")= page
             else
               li(class="breadcrumb-item")
-                a(href=(group.toLowerCase().replace(" ", "-") + ".html"))= group
+                a(href=("/" + (group.toLowerCase().replace(" ", "-"))))= group
               li(class="breadcrumb-item active" aria-current="page")= page
     div(class="row page-header__divider")
       div(class="col")

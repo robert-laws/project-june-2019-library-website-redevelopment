@@ -6,6 +6,7 @@ const prefix = require("gulp-autoprefixer");
 const sourcemaps = require("gulp-sourcemaps");
 const del = require("del");
 const browserSync = require("browser-sync").create();
+const minify = require('gulp-minify');
 const babel = require('gulp-babel');
 const concat = require('gulp-concat');
 
@@ -40,6 +41,7 @@ gulp.task('clean', function() {
 gulp.task('scripts', function() {
   var stream = gulp.src(paths.scripts.src)
     .pipe(sourcemaps.init())
+    .pipe(minify())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(paths.scripts.dest));
   return stream;
