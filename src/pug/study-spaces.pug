@@ -1,0 +1,45 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Study Spaces', 'Services')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Study Spaces', navServices)
+
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Study Spaces
+
+        p The library has several different types of study spaces. All students will be able to find a space that will work for their study needs.
+        p The group study rooms on the 1st floor can be reserves using the 
+          a(href="https://libcal.sfsq.georgetown.edu/reserve/group") group study room reservation form.
+
+        div(class="container")
+          div(class="row")
+            div(class="col-md-6")
+              h5 Study Tables
+              p On the ground floor are several tables that allow students to spread out their laptop and other study materials.
+              +image("/images/study-spaces-1.jpg", "Study Tables", "Study Tables", "full")
+            div(class="col-md-6")
+              h5 Study Tables with Lighting and Electricity
+              p Located on the ground floor, these study tables allow students to spread out their laptop and study materials. These tables also have lighting and electrical outlets.
+              +image("/images/study-spaces-2.jpg", "Image Magnifier Workstation", "Image Magnifier Workstation", "full")
+          div(class="row")
+            div(class="col-md-6")
+              h5 Group Study Room
+              p For students who wish to work in groups for two or more, the group study rooms are available on the ground and 1st floors. For students wishing to use a group study room on the 1st floor, please use the room booking system to make a reservation.
+              +image("/images/study-spaces-3.jpg", "Group Study Room", "Group Study Room", "full")
+            div(class="col-md-6")
+              h5 Ground Floor Study Carrels
+              p For individuals who wish to study with minimal distractions, the study carrels on the ground floor are available.
+              +image("/images/study-spaces-4.jpg", "Ground Floor Study Carrels", "Ground Floor Study Carrels", "full")
+          div(class="row")
+            div(class="col-md-6")
+              h5 Knowledge Bar
+              p Located on the ground floor near the circulation desk, the knowledge bar allows students to work and spread out their materials.
+              +image("/images/study-spaces-5.jpg", "Knowledge Bar", "Knowledge Bar", "full")
+            div(class="col-md-6")
+              h5 1st Floor Study Carrel
+              p For students looking for individual study space in an extra quiet area, the study carrels located on the 1st floor are available for this purpose.
+              +image("/images/study-spaces-6.jpg", "1st Floor Study Carrel", "1st Floor Study Carrel", "full")

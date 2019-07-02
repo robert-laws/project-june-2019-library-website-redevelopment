@@ -43,6 +43,18 @@
     th:last-child {
       width: 35%;
     }
+
+    table.quarter-equal {
+      th {
+        width: 25%;
+      }
+    }
+
+    table.third-equal {
+      th {
+        width: 33.33%;
+      }
+    }
   }
 
   &__hours {
@@ -60,7 +72,7 @@
     p, li {
       font-weight: normal;
       font-size: 1.05rem;
-      line-height: 1.45;
+      line-height: 1.5;
     }
 
     a {
@@ -118,6 +130,26 @@
         &::before {
           content: "- "
         }
+      }
+    }
+
+    &__side-content {
+      margin-top: 4rem;
+
+      img {
+        width: 100%;
+
+        @include media-respond-down(md) {
+          width: 50%;
+        }
+      }
+
+      h5 {
+        margin-top: 0;
+      }
+
+      p, li, h6 {
+        font-size: 0.9rem;
       }
     }
   }

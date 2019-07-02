@@ -1,0 +1,136 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Interlibrary Loans', 'Services')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Interlibrary Loans', navServices)
+
+      div(class="col-md-6 col-sm-12 content-page__content")
+        h4 Interlibrary Loans
+
+        h5 Overview
+        p As a researcher at Georgetown University's Qatar campus, you have full access to both the print and online resources of the library in Washington D.C. Books may be requested for dispatch to Qatar and a service is available to scan and send individual book chapters and print journal articles.
+
+        p Other scholarly resources not available from GU library services can be requested for electronic delivery using the 
+          a(href="http://illiad.library.georgetown.edu/illiad/") ILLiad service
+          | .
+        hr
+        h5 Articles
+        p Step 1: Use HoyaSearch for Articles
+
+        ul
+          li Begin with 
+            a(href="https://wrlc-gu.primo.exlibrisgroup.com/discovery/search?vid=01WRLC_GUNIV:QATAR&mode=advanced&sortby=rank") HoyaSearch 
+            | to determine if the GU-Q library has the article you want. Search by title, author, or keywork
+        p Step 2: Use Qatar National Library
+
+        ul
+          li Thousands of articles are available from the 
+            a(href="https://qnl.qa/en") QNL Library
+            |. To use QNL resources from home, you must become a 
+            a(href="https://library.qnl.qa/selfreg") registered user 
+            |first.
+        p Step 3: Request an Article using Illiad
+
+        ul
+          li Place a request through the 
+            a(href="http://illiad.library.georgetown.edu/illiad/") Illiad 
+            | system - using the Article request option.
+          li Your request will be processed by the access services team at main campus. You will be notified by email when your article is available for download.
+          li Journal articles are usually filled within 48 hours, but this depends on the speed of response from partner libraries.
+        
+        hr 
+        h5 Book Chapters
+        p Step 1: Use HoyaSearch for Books
+
+        ul
+          li Begin with 
+            a(href="https://wrlc-gu.primo.exlibrisgroup.com/discovery/search?vid=01WRLC_GUNIV:QATAR&mode=advanced&sortby=rank") HoyaSearch 
+            | to determine if the GU-Q library has the book (and chapter) you want
+        p Step 2: Access other libraries in Qatar
+
+        ul
+          li Search either at 
+            a(href="https://qnl.qa/en") Qatar National Library 
+            | or at 
+            a(href="other-libraries.html") other libraries in Qatar 
+            | to determine if the book is available in Qatar.
+        p Step 3: Request a Book Chpater using Illiad
+
+        ul
+          li Place a request through the 
+            a(href="http://illiad.library.georgetown.edu/illiad/") Illiad 
+            | system - using the Book Chapter request option.
+          li Your request will be processed by the access services team at main campus. You will be notified by email when your article is available for download.
+          li Book chapters are usually filled within 48 hours, but this depends on the speed of response from partner libraries.
+        hr
+        h5 Books
+        p Step 1: Use HoyaSearch for Books
+
+        ul
+          li Begin with 
+            a(href="https://wrlc-gu.primo.exlibrisgroup.com/discovery/search?vid=01WRLC_GUNIV:QATAR&mode=advanced&sortby=rank") HoyaSearch 
+            | to determine if the GU-Q library has the book you want
+        p Step 2: Access other libraries in Qatar
+
+        ul
+          li Search either at 
+            a(href="https://qnl.qa/en") Qatar National Library 
+            | or at 
+            a(href="other-libraries.html") other libraries in Qatar 
+            | to determine if the book is available in Qatar.
+        p Step 3: Main Campus
+
+        ul
+          li Use 
+            a(href="https://wrlc-gu.primo.exlibrisgroup.com/discovery/search?tab=LibraryCatalog&search_scope=MyInstitution&sortby=rank&vid=01WRLC_GUNIV:QATAR&mode=advanced&offset=0") HoyaSearch 
+            | to find books available at Qatar and Main Campus.
+          li If you find a book that is available at Main Campus but not in Qatar, sign into HoyaSearch with your netID and password and click on "Georgetown Request" in the Availability information for the book you wish to request.
+          li Books typically arrive in 7-10 days and you will be notified by the library when the book is ready to pick up.
+        p Step 4: Not Available in Qatar or Main Campus
+
+        ul
+          li Please contact the library or your 
+            a(href="personal-librarians.html") personal librarian 
+            | to discuss further options.
+        
+        hr
+        h5 Frequently Asked Questions about Illiad
+        ul
+          li What is Illiad? - Georgetown University Library is a member of ILLiad a community of academic and research libraries. Researchers at Georgetown University have access to the scholarly resources of other institutions through this partnership.
+          li First-time user of Illiad? - The first time you login to ILLiad, you will be asked to provide contact information. Fill out this form and you can begin requesting journal articles and book chapters.
+          li What happens after I submit an Illiad request? - Your request will be processed by the access services team at Lauinger Library in Washington, DC. Check your 
+            a(href="https://illiad.library.georgetown.edu/illiad/") Illiad Account 
+            | to view request status updates.
+          li How long will an Illiad request take to arrive? - If an electronic version can be located, requests are usually filled within 48 hours. If the request requires scanning by a lending library, it will take longer and is dependent on availability. You will receive an email when your request has been filled. The item will be available on your ILLiad page for 30 days and then deleted.
+
+      div(class="col-md-3 col-sm-12 content-page__content")
+        div(class="card content-page__content__side-content")
+          div(class="card-body")
+            h5 Connect to Illiad
+
+            a(href="http://illiad.library.georgetown.edu/illiad/")
+              img(src="/images/interlibrary-loans.jpg" class="img-responsive mb-3")
+
+            p Copyright - Useful Links
+            ul
+              li 
+                a(href="http://www.library.georgetown.edu/copyright") Copyright at Georgetown University
+              li 
+                a(href="http://www.wipo.int/wipolex/en/details.jsp?id=3567") Qatar Copyright Law
+              li 
+                a(href="https://youtu.be/NInVk7WyseI") Video - How to Use Illiad
+            
+            h6 Important Information
+            p Generally Not Available for Interlibrary Loan
+            ul
+              li Unpublished Manuscripts
+              li Archival Materials
+              li Print Dissertations & Theses
+              li Audiovisual Materials
+            
+            h6 For Non GU-Q Students
+            p Students and staff at Education City universities and schools can request GU-Q resources through their institution's library.

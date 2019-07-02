@@ -1,0 +1,29 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Assistive Technology', 'Services')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Assistive Technology', navServices)
+
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Assistive Technology
+
+        h5 General Information
+        p In partnership with the Office of Academic Services and Mada, the Qatar Assistive Technology Center the Library provides equipment and software designed specifically for learners who are visually or hearing impaired.
+        p There is a text-to-speech workstation and image magnifier available for use in the room.
+        p The location is inside the library, room 0B09, ask at the circulation desk for more information
+
+        div(class="container")
+          div(class="row")
+            div(class="col-md-6")
+              h5 Text-to-Speech
+              p The Text-to-Speech equipment scans and then reads text out-loud at variable speeds. Headphones are available to ensure comfortable listening and privacy.
+              +image("/images/assistive-technology-1.jpg", "Text-to-Speech Workstation", "Text-to-Speech Workstation", "full")
+            div(class="col-md-6")
+              h5 Image Magnifier
+              p The Image Magnifier enlarges difficult to read text. The text or an image can be placed on the table and offers multiple magnification settings.
+              +image("/images/assistive-technology-3.jpg", "Image Magnifier Workstation", "Image Magnifier Workstation", "full")
+

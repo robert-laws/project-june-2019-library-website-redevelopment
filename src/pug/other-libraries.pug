@@ -1,0 +1,128 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Other Libraries', 'About Us')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Other Libraries', navResearch)
+        
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Other Libraries
+
+        div(class="content-page__table")
+          table(class="table table-bordered table-hover third-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Library Catalog
+                th(scope="col") Subjects Covered
+                th(scope="col") Notes (* tips on using other library catalog search)
+            tbody
+              tr
+                td 
+                  a(href="http://search.library.cmu.edu/vufind/Search/Advanced") Carnegie Mellon University in Qatar
+                td
+                  ul
+                    li Biological Sciences
+                    li Business Administration
+                    li Computational Biology
+                    li Computer Science
+                    li Information Systems
+                td Set library = Qatar Library
+              tr
+                td 
+                  a(href="http://cna-qatar.libguides.com/library") College of the North Atlantic Qatar
+                td
+                  ul
+                    li Business Studies
+                    li Engineering
+                    li Health Sciences
+                    li Information Technology
+                    li Security
+                td
+              tr
+                td 
+                  a(href="https://hbku.edu.qa/en/hbku-library") Hamad Bin Khalifa University
+                td
+                  ul 
+                    li Architecture
+                    li Islamic Finance
+                    li Islamic Studies
+                    li Public Policy
+                    li Urban Design
+                td Set "Limit to" = Qatar Library
+              tr
+                td 
+                  a(href="http://nucat.library.northwestern.edu/") Northwestern University in Qatar
+                td
+                  ul 
+                    li Communications
+                    li Journalism
+                    li Liberal Arts
+                td Set "Limit to" = Qatar Library
+              tr
+                td 
+                  a(href="http://www.qnl.qa/find-answers/search-the-catalog") Qatar National Library
+                td
+                  ul 
+                    li All Subjects
+                td
+              tr
+                td 
+                  a(href="http://mylibrary.qu.edu.qa/") Qatar University
+                td
+                  ul 
+                    li Architecture
+                    li Arts
+                    li Business
+                    li Education
+                    li Law
+                    li Science
+                    li Sharia & Islamic Studies
+                td
+              tr
+                td 
+                  a(href="http://libcat.tamu.edu/") Texas A&M University at Qatar
+                td
+                  ul 
+                    li Engineering
+                    li Sciences
+                td Limit Location to "Texas A&M at Qatar"
+              tr
+                td 
+                  a(href="http://tii.qa/library") Translation and Interpreting Institute (TII)
+                td
+                  ul 
+                    li Arabic
+                    li English
+                    li French
+                    li Spanish
+                    li Translation & Interpreting
+                td
+              tr
+                td 
+                  a(href="http://www.ucl.ac.uk/qatar/library") University College London Qatar
+                td
+                  ul 
+                    li Archaeology
+                    li Museum Studies
+                    li Conservation
+                    li Information Sciences
+                td
+              tr
+                td 
+                  a(href="http://www.qatar.vcu.edu/library/") VCUQatar
+                td
+                  ul 
+                    li Design
+                    li Fine Arts
+                    li Liberal Arts & Sciences
+                td
+              tr
+                td 
+                  a(href="http://qatar-weill.cornell.edu/elibrary/catalog.html") Weill Cornell Medical College in Qatar
+                td
+                  ul 
+                    li Medical Sciences
+                td

@@ -1,0 +1,58 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Online Learning', 'Services')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Online Learning', navServices)
+
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Online Learning
+
+        h5 Resources
+
+        p Georgetown University has several valuable online learning resources available to all members of the University community. In addition, residents of Qatar have access through the Qatar National Library (QNL) to many online learning resources. Finally, there's a wealth of free and paid learning resources online that offer even more useful information.
+
+        h6(class="mb-4") Georgetown Accessible Resources
+          ul(class="mt-2")
+            li 
+              a(href="https://shib.lynda.com/Shibboleth.sso/InCommon?providerId=https://shibb-idp.georgetown.edu/idp/shibboleth&target=https://shib.lynda.com/InCommon") Lynda.com 
+              | - covers both technical and soft skills including topics as excel, web development, leadership and self-promotion.
+
+            li 
+              a(href="https://www.safaribooksonline.com/library/view/temporary-access/") Safari Books Online 
+              | - vast collection of books online covering topics such as technology, business, career development, and more.
+
+        h6(class="mb-4") Resources Accessible via QNL (requires a QNL Library Card)
+          ul(class="mt-2")
+            li 
+              a(href="http://0-connect.mangolanguages.com.library.qnl.qa/qnl/start") Mango Languages 
+              | - online language learning resource with dozens of languages available to learn.
+
+        h6(class="mb-4") Other Resources Accessible Online
+          ul(class="mt-2")
+            li 
+              a(href="https://www.edx.org/") Edx 
+              | - an online learning destination and MOOC provider, offering high-quality courses from the world’s best universities and institutions.
+
+            li 
+              a(href="https://www.coursera.org/") Coursera 
+              | - an online learning resource offering structured courses and specialization tracks
+
+            li 
+              a(href="https://www.udemy.com/") Udemy 
+              | - platform for instructors to offer online learning on a wide range of topics including technology, design, and personal development.
+
+            li 
+              a(href="http://www.openculture.com/") Open Culture 
+              | - centralized location for links to online learning including books, training course, audio content, and more.
+
+            li 
+              a(href="https://www.ted.com/") TED Talks 
+              | - influential videos from expert speakers on education, business, science, tech and creativity, with subtitles in 100+ languages.
+
+            li 
+              a(href="https://edu.gcfglobal.org/en/") GFCGlobal 
+              | - offers more than 90 tutorials, 1,000 lessons, videos, and interactive learning from Microsoft Office to email etiquette, career planning and more.

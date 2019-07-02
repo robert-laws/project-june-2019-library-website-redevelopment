@@ -1,0 +1,203 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Borrowing', 'Services')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Borrowing', navServices)
+
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Borrowing
+
+        div(class="content-page__table")
+          h5(class="mb-3") Undergraduates
+          h6 Books, Periodicals, and DVDs
+          table(class="table table-bordered table-hover quarter-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Item
+                th(scope="col") Loan Period
+                th(scope="col") Max # of Items
+                th(scope="col") Max # of Renewals
+            tbody
+              tr
+                td Books
+                td 4 Weeks
+                td Unlimited
+                td 3
+              tr
+                td DVDs/Videos
+                td 7 Days
+                td Unlimited
+                td None
+              tr
+                td Periodicals
+                td 7 Days
+                td Unlimited
+                td None
+          h6 Equipment
+          table(class="table table-bordered table-hover quarter-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Item
+                th(scope="col") Loan Period
+                th(scope="col") Max # of Items
+                th(scope="col") Max # of Renewals
+            tbody
+              tr
+                td Kindle
+                td 2 Weeks
+                td None
+                td None
+
+          h5(class="mb-3 mt-5") Faculty
+          h6 Books, Periodicals, and DVDs
+          table(class="table table-bordered table-hover quarter-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Item
+                th(scope="col") Loan Period
+                th(scope="col") Max # of Items
+                th(scope="col") Max # of Renewals
+            tbody
+              tr
+                td Books
+                td 1 Year
+                td Unlimited
+                td On-site renewal at the end of the semester
+              tr
+                td DVDs/Videos
+                td 7 Days
+                td Unlimited
+                td None
+              tr
+                td Periodicals
+                td 7 Days
+                td Unlimited
+                td None
+          h6 Equipment
+          table(class="table table-bordered table-hover quarter-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Item
+                th(scope="col") Loan Period
+                th(scope="col") Max # of Items
+                th(scope="col") Max # of Renewals
+            tbody
+              tr
+                td Kindle
+                td 2 Weeks
+                td None
+                td None
+
+          h5(class="mb-3 mt-5") Staff
+          h6 Books, Periodicals, and DVDs
+          table(class="table table-bordered table-hover quarter-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Item
+                th(scope="col") Loan Period
+                th(scope="col") Max # of Items
+                th(scope="col") Max # of Renewals
+            tbody
+              tr
+                td Books
+                td 4 Weeks
+                td Unlimited
+                td 3
+              tr
+                td DVDs/Videos
+                td 7 Days
+                td Unlimited
+                td None
+              tr
+                td Periodicals
+                td 7 Days
+                td Unlimited
+                td None
+          h6 Equipment
+          table(class="table table-bordered table-hover quarter-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Item
+                th(scope="col") Loan Period
+                th(scope="col") Max # of Items
+                th(scope="col") Max # of Renewals
+            tbody
+              tr
+                td Kindle
+                td 2 Weeks
+                td None
+                td None
+
+          h5(class="mb-3 mt-5") Alumni
+          p To support lifelong learning Georgetown University offers its graduates continued library membership.
+          ul
+            li Qatar based GU Alumni can borrow a total of 5 items. Access is not provided to main campus materials.
+            li Alumni memberships can be obtained by completing the 
+              a(href="alumni-borrower-form.html") Alumni Borrower Application Form 
+              | and providing a QR200 refundable deposit.
+            li Remote access to a selected number subscription databases is available to alumni using their NetID and password. 
+              a(href="http://www.library.georgetown.edu/alumni/full-text") Click here for additional information
+              |.
+          h6 Books, Periodicals, and DVDs
+          table(class="table table-bordered table-hover quarter-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Item
+                th(scope="col") Loan Period
+                th(scope="col") Max # of Items
+                th(scope="col") Max # of Renewals
+            tbody
+              tr
+                td Books
+                td 4 Weeks
+                td Unlimited
+                td 3
+              tr
+                td DVDs/Videos
+                td 7 Days
+                td Unlimited
+                td None
+              tr
+                td Periodicals
+                td 7 Days
+                td Unlimited
+                td None
+
+          h5(class="mb-3 mt-5") Visitors
+          p Visitors are welcome to come in and use the library space. Resources can be used within the library only.
+          p Sign-up with the 
+            a(href="http://www.qnl.qa/") Qatar National Library 
+            | to access their extensive information resources in a wide variety of subjects.
+          img(src="/images/qnl-logo.jpg" class="img-responsive")
+
+          h5(class="mb-3 mt-5") UCL Qatar
+          p The UCL Qatar library collections are located on the 2nd floor of the library. Use the self-checkout or take the items you wish to borrow to the combined UCL Qatar/GU-Q library circulation desk on the ground floor.
+          p The UCL-Q community can also check out items from GU-Q Library.
+          h6 Books, Periodicals, and DVDs
+          table(class="table table-bordered table-hover quarter-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Item
+                th(scope="col") Loan Period
+                th(scope="col") Max # of Items
+                th(scope="col") Max # of Renewals
+            tbody
+              tr
+                td Books
+                td 4 Weeks
+                td Unlimited
+                td 3
+              tr
+                td DVDs/Videos
+                td 7 Days
+                td Unlimited
+                td None
+              tr
+                td Periodicals
+                td 7 Days
+                td Unlimited
+                td None

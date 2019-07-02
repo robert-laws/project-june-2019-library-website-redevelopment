@@ -1,0 +1,79 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Scholarly Communication', 'Services')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Scholarly Communication', navServices)
+
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Scholarly Communication
+
+        p Scholarly communication is an ‘umbrella’ term that relates to all stages of the scholarship lifecycle.
+        p Scholarly communication can be defined as “the system through which research and other scholarly writings are created, evaluated for quality, disseminated to the scholarly community, and preserved for future use.” 
+        p(class="text-right") — 
+          a(href="http://www.arl.org/focus-areas/scholarly-communication#.VXi7VVLUdMQ") Association of Research Libraries
+
+        div(class="container")
+          div(class="row")
+            div(class="col-md-1")
+            div(class="col-md-10")
+              +image("/images/scholarly-communication.png", "The Publication Cycle", "The Publication Cycle", "full")
+              a(href="https://library.uwinnipeg.ca/scholarly-communication/index.html") Source: https://library.uwinnipeg.ca/scholarly-communication/index.html
+            div(class="col-md-1")
+
+        h5 Library Support for Scholarly Communication
+        p Faculty and students participate in the scholarly communications system as authors, editors, reviewers, and readers. Our library supports young and experienced researchers at all stages of their work:
+        p Here is the list of useful resources related to each step:
+
+        h5 Creation
+        ul
+          li Office of Research - for funding opportunities and current research projects
+          li Consultation with a 
+            a(href="personal-librarian.html") librarian 
+            | - for assistance with research
+        h5 Evaluation
+        ul
+          li 
+            a(href="https://www.library.georgetown.edu/scholarly-communication/journal-quality") Journal Quality
+          li 
+            a(href="https://acrl.libguides.com/scholcomm/toolkit/evaluating") Evaluating Journals
+        h5 Publication
+        ul
+          li 
+            a(href="https://www.library.georgetown.edu/scholarly-communication/publishing-guide-intro") Guide to Scholarly Publishing
+          li 
+            a(href="https://booklab.georgetown.edu/") Office of Scholarly Publications
+          li 
+            a(href="http://v2.sherpa.ac.uk/juliet/") Research Funders Requirements
+          li 
+            a(href="https://www.library.georgetown.edu/scholarly-communication/open-access") Open Access
+          li 
+            a(href="http://www.sherpa.ac.uk/romeo/search.php") SHERPA/RoMEO 
+            | for understanding your author’s rights with the publisher
+          li 
+            a(href="https://www.library.georgetown.edu/scholarly-communication/manage-your-rights") Authors' Rights
+          li 
+            a(href="https://orcid.org/") ORCID 
+            | for creating your researcher ID
+        h5 Dissemination and Access/Preservation
+        ul
+          li 
+            a(href="https://www.library.georgetown.edu/scholarly-communication/op-eds-interviews-social-media") Communicating through the Media
+          li 
+            a(href="https://www.library.georgetown.edu/scholarly-communication/gufaculty360") GUFaculty360
+          li 
+            a(href="https://repository.library.georgetown.edu/") DigitalGeorgetown 
+            | - self-archiving at the GU and increasing the global reach
+          li 
+            a(href="https://www.library.georgetown.edu/scholarly-communication/etds") Theses and Dissertations
+        h5 Reuse
+        ul
+          li 
+            a(href="https://www.library.georgetown.edu/scholarly-communication/measuring-impact") Measuring Impact
+          li 
+            a(href="https://www.library.georgetown.edu/scholarly-communication/online-piracy") Online Piracy and the Disruption of Scholarly Publishing
+          li 
+            a(href="https://www.library.georgetown.edu/copyright") Copyright
