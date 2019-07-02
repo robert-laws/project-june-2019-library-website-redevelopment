@@ -1,0 +1,60 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Personal Librarians', 'About Us')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Personal Librarians', navAboutUs)
+        
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Personal Librarians
+
+        p The richness and complexity of library resources can be overwhelming. The Personal Librarian program is developed to support you in your learning and inquiry.
+        
+        ul
+          li Keep you informed about new library programs and services via periodic emails
+          li Assist you with developing effective search strategy, conducting research and locating relevant information.
+          li Help you to organize, store and manage information, to cite correctly and avoid plagiarism.
+          li Answer your questions about library policies, resources and events.
+          li Assist you with specific software applications such as Refworks, iMovie, Logic Pro and others.
+          li Connect you to resources outside the Georgetown library.
+        
+        h5 Who is your personal librarian?
+
+        p Each freshmen is assigned a Personal Librarian by the Academic Dean:
+
+        div(class="container")
+          div(class="row")
+            div(class="col-md-4 col-sm-12 mx-auto")
+              h6 If your Dean is:
+              p Julien Moutte
+              h6 Your Personal Librarian is:
+              img(src="/images/tatiana-usova.jpg" class="img-fluid img-thumbnail")
+              h6 Tatiana Usova
+              p(class="mb-3") Associate Director of the Library
+              p(class="mt-n3") 
+                a(href="http://contact.georgetown.edu/view/tu44") Send Email
+              p(class="mt-n3") Room: 1B14
+            div(class="col-md-4 col-sm-12")
+              h6 If your Dean is:
+              p Gehan Samarah
+              h6 Your Personal Librarian is:
+              img(src="/images/robert-laws.jpg" class="img-fluid img-thumbnail")
+              h6 Robert Laws
+              p(class="mb-3") Technology and Instruction Librarian
+              p(class="mt-n3") 
+                a(href="http://contact.georgetown.edu/view/rdl27") Send Email
+              p(class="mt-n3") Room: 1B13
+            div(class="col-md-4 col-sm-12")
+              h6 If your Dean is:
+              p Gehan Samarah
+              h6 Your Personal Librarian is:
+              img(src="/images/paschalia-terzi.jpg" class="img-fluid img-thumbnail")
+              h6 Paschalia Terzi
+              p(class="mb-3") Instruction Librarian
+              p(class="mt-n3") 
+                a(href="http://contact.georgetown.edu/view/pt491") Send Email
+              p(class="mt-n3") Room: 1B15
+

@@ -1,0 +1,12 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Ask Us', 'About Us')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Ask Us', navAboutUs)
+        
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Ask Us

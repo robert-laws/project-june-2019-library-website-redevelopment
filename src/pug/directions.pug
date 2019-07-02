@@ -1,0 +1,39 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Directions', 'About Us')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Directions', navAboutUs)
+        
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Directions
+        
+        h5 Directions & Parking
+        p The Georgetown University in Qatar Library is located on the ground floor of the Georgetown University in Qatar building in Education City, Doha, Qatar. The library welcomes all visitors during its normal hours of operation.
+        p For visitors, there is no parking on site during weekdays until 5pm. Visitors must park at the Ceremonial Court and take a shuttle to the Georgetown University building.
+        p Please note, all visitors must bring a photo identification document, (employee badge, national ID, or passport) to gain entry to the Georgetown University building.
+
+        div(class="alert alert-tertiary-blue" role="alert")
+          a(href="http://qatar.sfs.georgetown.edu/about/contact-us" class="alert-link") Directions to the Georgetown University in Qatar
+
+        hr
+
+        h5 Floorplan
+
+        div(class="container")
+          div(class="row")
+            div(class="col-md-6 col-sm-12")
+              h6(class="mt-4") Ground Floor
+              div(class="alert alert-tertiary-blue" role="alert")
+                a(href="/images/ground-floor.jpg" class="alert-link") Library Ground Floor - click to enlarge
+              img(src="/images/ground-floor.jpg" class="img-responsive img-thumbnail")
+            div(class="col-md-6 col-sm-12")
+              h6(class="mt-4") First Floor
+              div(class="alert alert-tertiary-blue" role="alert")
+                a(href="/images/first-floor.jpg" class="alert-link") Library 1st Floor - click to enlarge
+              img(src="/images/first-floor.jpg" class="img-responsive img-thumbnail")
+
+

@@ -12,7 +12,7 @@ mixin page-header(page, group)
               li(class="breadcrumb-item active" aria-current="page")= page
             else
               li(class="breadcrumb-item")
-                a(href=group.toLowerCase().replace(" ", "-"))= group
+                a(href=(group.toLowerCase().replace(" ", "-") + ".html"))= group
               li(class="breadcrumb-item active" aria-current="page")= page
     div(class="row page-header__divider")
       div(class="col")

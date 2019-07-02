@@ -1,0 +1,103 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Hours', 'About Us')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Hours', navAboutUs)
+        
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Hours
+
+        div(class="content-page__hours")
+          h5 
+            i(class="far fa-clock")
+            | Today's Hours: 9am - 4pm
+
+        div(class="content-page__table")
+          h5(class="mb-3") Summer 2019: June 28 - Aug. 10, 2019
+          table(class="table table-bordered table-hover")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Date
+                th(scope="col") Hours
+            tbody
+              tr
+                td Sunday - Thursday
+                td Friday - Saturday
+              tr
+                td 9am - 4pm
+                td Closed
+        div(class="content-page__table")
+          h5(class="mb-3") Week of Eid Al Adha - Aug. 11 - 17, 2019
+          table(class="table table-bordered table-hover")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Date
+                th(scope="col") Hours
+            tbody
+              tr
+                td Sunday - Wednesday, Aug. 11 -14 (Eid Al Adha)
+                td Closed
+              tr
+                td Thursday, Aug. 15
+                td 9am - 4pm
+              tr
+                td Friday - Saturday, Aug. 16 & 17
+                td Closed
+        div(class="content-page__table")
+          h5(class="mb-3") NSO (New Student Orientation) Week: Aug. 18 – 24, 2019
+          table(class="table table-bordered table-hover")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Date
+                th(scope="col") Hours
+            tbody
+              tr
+                td Sunday - Thursday
+                td Friday - Saturday
+              tr
+                td 8am - 5pm
+                td Closed
+        div(class="content-page__table")
+          h5(class="mb-3") Fall Term: Aug. 25 – Dec. 14, 2019
+          table(class="table table-bordered table-hover")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Date
+                th(scope="col") Hours
+            tbody
+              tr
+                td Sunday - Wednesday
+                td 8am - 10:45pm
+              tr
+                td Thursday
+                td 8am - 7pm
+              tr
+                td Friday
+                td Closed
+              tr
+                td Saturday
+                td 3pm - 10:45pm
+        div(class="content-page__table")
+          h5(class="mb-3") Reference Desk Hours (during Fall & Spring Term)
+          table(class="table table-bordered table-hover")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Date
+                th(scope="col") Hours
+            tbody
+              tr
+                td Sunday - Wednesday
+                td 12pm - 4pm
+        div(class="content-page__table")
+          h5(class="mb-3") About our opening hours
+          table(class="table table-bordered")
+            tbody
+              tr
+                td
+                  p The library maintains shorter hours during Ramadan, semester breaks and holidays as most students and faculty are away.
+                  p The library is closed for national holidays, and whenever the university is closed, this includes during Eid holidays, National Day (December 18), Sports Day (the second Tuesday in February) and winter break (usually from December 24 through January 1).
+                  p We are also closed the Saturdays adjacent to long holidays for students. This includes days before and after spring and semester breaks and Saturdays falling within or directly adjacent to an Eid or national holiday.

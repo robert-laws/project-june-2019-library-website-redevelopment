@@ -1,5 +1,5 @@
 mixin side-nav(page, items)
-  div(class="list-group")
+  div(class="list-group d-none d-md-block")
     each val, index in items
       if page == index
         a(href=val class="list-group-item list-group-item-action active")= index
