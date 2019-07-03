@@ -267,7 +267,9 @@ function getSummerHours() {
 // inserts current hours into quick links area - function location in the footer block
 (function ($) {
   $(document).ready(function () {
-    var finalHours = getHours();
-    document.querySelector("#library-hours").innerText = finalHours;
+    if(document.querySelector("#library-hours")) {
+      var finalHours = getHours();
+      document.querySelector("#library-hours").innerText = finalHours;
+    }
   });
 })(jQuery);

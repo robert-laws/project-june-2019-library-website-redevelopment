@@ -15,6 +15,13 @@
   
     .list-group {
       margin-top: 1.6rem;
+
+      a {
+        &:hover,
+        &:active {
+          color: $secondary-light-blue;
+        }
+      }
   
       .list-group-item-action {
         border-radius: 0;
@@ -22,6 +29,11 @@
   
         &.active {
           background-color: $primary;
+
+          &:hover,
+          &:active {
+            color: $color-white;
+          }
 
           &:hover {
             background-color: $primary;
