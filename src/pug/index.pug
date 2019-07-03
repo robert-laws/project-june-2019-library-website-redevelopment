@@ -30,10 +30,11 @@ block content
                         option(value="everything") Everything
                         option(value="course-reserves") Course Reserves
                     div(class="col-md-1")
-                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                      button(type="submit" class="btn btn-secondary-dark-blue" onclick="goSearch(document.querySelector('#hoyaSearchType').value, document.querySelector('#hoyaSearchText').value);return false;") Search
                 div(class="row tips d-flex justify-content-between")
-                  a(href="#") advanced search
-                  a(href="#") what am I searching?
+                  a(href="https://wrlc-gu.primo.exlibrisgroup.com/discovery/search?vid=01WRLC_GUNIV:QATAR&mode=advanced") advanced search
+                  a(href="#" onclick="whatSearchingHelp('hoya');return false;") what am I searching?
+                  p(id="hoyaWhat" class="whatSearching" class="d-none") Searches HoyaSearch, the Georgetown University Library catalog, for books, ebooks, articles, journals, and multimedia.
             div(class="tab-pane fade" id="databases" role="tabpanel" aria-labelledby="databases-tab")
               section(class="container")
                 form(id="databasesForm") 
@@ -42,10 +43,69 @@ block content
                       label(class="sr-only" for="databasesText") Search Databases
                       input(id="databasesText" type="text" class="form-control" placeholder="Search Databases")
                     div(class="col-md-1")
-                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                      button(type="submit" class="btn btn-secondary-dark-blue" onclick="goSearchOther('databases', document.querySelector('#databasesText').value); return false;") Search
+                div(class="row tips-az-list")
+                  ul(class="list-inline")
+                    li(class="list-inline-item" id="listA" title="A")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=a") A
+                    li(class="list-inline-item" id="listB" title="B")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=b") B
+                    li(class="list-inline-item" id="listC" title="C")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=c") C
+                    li(class="list-inline-item" id="listD" title="D")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=d") D
+                    li(class="list-inline-item" id="listE" title="E")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=e") E
+                    li(class="list-inline-item" id="listF" title="F")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=f") F
+                    li(class="list-inline-item" id="listG" title="G")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=g") G
+                    li(class="list-inline-item" id="listH" title="H")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=h") H
+                    li(class="list-inline-item" id="listI" title="I")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=i") I
+                    li(class="list-inline-item" id="listJ" title="J")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=j") J
+                    li(class="list-inline-item" id="listK" title="K")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=k") K
+                    li(class="list-inline-item" id="listL" title="L")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=l") L
+                    li(class="list-inline-item" id="listM" title="M")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=m") M
+                    li(class="list-inline-item" id="listN" title="N")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=n") N
+                    li(class="list-inline-item" id="listO" title="O")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=o") O
+                    li(class="list-inline-item" id="listP" title="P")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=p") P
+                    li(class="list-inline-item" id="listQ" title="Q")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=q") Q
+                    li(class="list-inline-item" id="listR" title="R")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=r") R
+                    li(class="list-inline-item" id="listS" title="S")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=s") S
+                    li(class="list-inline-item" id="listT" title="T")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=t") T
+                    li(class="list-inline-item" id="listU" title="U")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=u") U
+                    li(class="list-inline-item" id="listV" title="V")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=v") V
+                    li(class="list-inline-item" id="listW" title="W")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=w") W
+                    li(class="list-inline-item" id="listX" title="X")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=x") X
+                    li(class="list-inline-item" id="listY" title="Y")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=y") Y
+                    li(class="list-inline-item" id="listZ" title="Z")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=z") Z
+                    li(class="list-inline-item" id="list#" title="#")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=pound") #
+                    li(class="list-inline-item" id="list#" title="ALL")
+                      a(href="https://guides.qatar.georgetown.edu/az.php?a=all") ALL
                 div(class="row tips d-flex justify-content-between")
                   span &nbsp;
-                  a(href="#") what am I searching?
+                  a(href="#" onclick="whatSearchingHelp('databases');return false;") what am I searching?
+                  p(id="databasesWhat" class="whatSearching" class="d-none") Searches and finds any word contained in a library database title or description.
             div(class="tab-pane fade" id="journals" role="tabpanel" aria-labelledby="journals-tab")
               section(class="container")
                 form(id="journalsForm") 
@@ -54,22 +114,24 @@ block content
                       label(class="sr-only" for="journalsText") Search Journals
                       input(id="journalsText" type="text" class="form-control" placeholder="Search Journals")
                     div(class="col-md-1")
-                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                      button(type="submit" class="btn btn-secondary-dark-blue" onclick="goSearchOther('databases', document.querySelector('#journalsText').value); return false;") Search
                 div(class="row tips d-flex justify-content-between")
                   span &nbsp;
-                  a(href="#") what am I searching?
+                  a(href="#" onclick="whatSearchingHelp('journals');return false;") what am I searching?
+                  p(id="journalsWhat" class="whatSearching" class="d-none") Searches for the titles of print and electronic journals, magazines, and newspapers available through Georgetown University Library.
             div(class="tab-pane fade" id="scholar" role="tabpanel" aria-labelledby="scholar-tab")
               section(class="container")
                 form(id="googleScholarForm") 
                   div(class="row no-gutters mt-3")
                     div(class="col-md-10 mr-2 mb-2")
                       label(class="sr-only" for="googleScholarText") Search Google Scholar
-                      input(id="googleScholarText" type="text" class="form-control" placeholder="Search GoogleScholar")
+                      input(id="googleScholarText" type="text" class="form-control" placeholder="Search Google Scholar")
                     div(class="col-md-1")
-                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                      button(type="submit" class="btn btn-secondary-dark-blue" onclick="goSearchOther('google-scholar', document.querySelector('#googleScholarText').value); return false;") Search
                 div(class="row tips d-flex justify-content-between")
                   span &nbsp;
-                  a(href="#") what am I searching?
+                  a(href="#" onclick="whatSearchingHelp('googleScholar');return false;") what am I searching?
+                  p(id="googleScholarWhat" class="whatSearching" class="d-none") Search for materials via Google Scholar.
             div(class="tab-pane fade" id="course" role="tabpanel" aria-labelledby="course-tab")
               section(class="container")
                 form(id="courseReservesForm") 
@@ -78,18 +140,18 @@ block content
                       label(class="sr-only" for="courseReservesText") Search Course Reserves
                       input(id="courseReservesText" type="text" class="form-control" placeholder="Search Course Reserves")
                     div(class="col-md-1")
-                      button(type="submit" class="btn btn-secondary-dark-blue") Search
+                      button(type="submit" class="btn btn-secondary-dark-blue" onclick="goSearchOther('course-reserves', document.querySelector('#courseReservesText').value); return false;") Search
                 div(class="row tips d-flex justify-content-between")
                   span &nbsp;
-                  a(href="#") what am I searching?
+                  a(href="#" onclick="whatSearchingHelp('courseReserves');return false;") what am I searching?
+                  p(id="courseReservesWhat" class="whatSearching" class="d-none") Searches course reserves including professor name, course ID or name.
       div(class="col-lg-4 col-md-12")
         div(class="home-page__quick-links")
           section
             a(href="hours") 
               div(class="alert alert-light")
                 i(class="far fa-clock")
-                span Today's Hours:
-                span(class="lib-hours") 9am - 4pm
+                span(id="library-hours") 
           section
             a(href="http://libcal.sfsq.georgetown.edu/booking/gsr") 
               div(class="alert alert-light")
@@ -120,7 +182,7 @@ block content
         div(class="home-page__square")
           header Gem of the Week
           section
-            a(href="#")
+            a(href="https://shib.lynda.com/Shibboleth.sso/InCommon?providerId=https://shibb-idp.georgetown.edu/idp/shibboleth&target=https://shib.lynda.com/InCommon")
               img(src="/images/lynda-2x.png" class="img-fluid")
       div(class="col-md-4 col-sm-12")
         div(class="home-page__square")
