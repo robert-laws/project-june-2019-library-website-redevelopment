@@ -140,11 +140,11 @@
       font-weight: bold;
       border-radius: 0;
       margin: 1rem;
-      color: $secondary;
+      color: $color-black !important;
 
       &:hover {
         background-color: lighten($light-blue, 20%);
-        color: darken($secondary, 45%);
+        color: $color-black !important;
       }
 
       i {
