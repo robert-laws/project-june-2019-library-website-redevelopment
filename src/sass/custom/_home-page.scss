@@ -3,7 +3,7 @@
 
   &__search {
     padding: 1rem;
-    min-height: 325px;
+    min-height: 335px;
     background-image: url('/images/home-search-80-bg-2x.jpg');
     background-repeat: no-repeat;
     background-position: center;
@@ -56,6 +56,10 @@
           padding: 0 0 0 1.5rem;
           font-size: 0.9rem;
 
+          @include media-respond-down(md) {
+            padding: 0.5rem 1rem 0;
+          }
+
           a {
             text-decoration: none;
             font-weight: 500;
@@ -100,7 +104,7 @@
         color: $color-white;
 
         @include media-respond(lg) {
-          padding: 0.5rem 0.65rem;
+          padding: 0.5rem 0.55rem;
         }
 
         @include media-respond-down(sm) {
@@ -135,7 +139,7 @@
     }
 
     section a > .alert {
-      padding: 0.35rem 1rem;
+      padding: 0.4rem 1rem;
       font-size: 0.9rem;
       font-weight: bold;
       border-radius: 0;
