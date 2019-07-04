@@ -2,8 +2,16 @@
 .library-navigation {
   $self: &;
 
-  box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
+  // box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);
   
+  .navbar {
+    padding: 0 1rem;
+
+    @include media-respond-down(md) {
+      padding: 0.5rem 1rem;
+    }
+  }
+
   .navbar .dropdown-menu {
     border: none;
   }
@@ -33,12 +41,18 @@
 
     .navbar .dropdown {
       position: static;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid $color-white;
+
+      &:hover {
+        border-bottom: 1px solid $primary;
+      }
     }
   
     .navbar .dropdown-menu {
       width: 99vw;
       position: absolute;
-      top: 45px;  
+      top: 55px;  
       left: 50%;
       transform: translate(-50%, 0%);
       padding: 1.5rem 0;
@@ -58,7 +72,7 @@
         margin: 0.5rem 0 0.5rem 2.6rem;
         font-weight: bold;
         text-transform: uppercase;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
 
         a {
           color: $secondary-dark-blue;

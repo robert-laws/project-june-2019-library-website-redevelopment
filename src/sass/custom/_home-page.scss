@@ -164,12 +164,24 @@
   }
 
   &__square {
-    header {
-      background-color: $primary;
-      color: $color-white;
-      text-align: center;
-      padding: 0.5rem 0;
-      margin: 0.5rem 0;
+    a {
+      header {
+        background-color: $primary;
+        color: $color-white;
+        text-align: center;
+        padding: 0.5rem 0;
+        margin: 0.5rem 0;
+        transition: background-color 30ms ease-in;
+      }
+
+      &:hover > header {
+        background-color: $secondary-light-blue;
+      }
+
+      &:hover > section > img {
+        filter: opacity(0.85);
+      }
+
     }
 
     section {
@@ -179,12 +191,7 @@
         margin-bottom: 2rem;
       }
 
-      img {
-        
-        &:hover {
-          filter: opacity(0.85);
-        }
-      }
+      
     }
   }
 }
