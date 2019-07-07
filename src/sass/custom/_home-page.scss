@@ -103,8 +103,13 @@
         margin-right: 0.3rem;
         color: $color-white;
 
-        @include media-respond(lg) {
-          padding: 0.5rem;
+        @include media-respond-down(lg) {
+          padding: 0.42rem;
+        }
+
+        @include media-respond-down(sm) {
+          padding: 0.5rem 1rem;
+          font-weight: 600;
         }
 
         @include media-respond-down(sm) {
@@ -145,6 +150,11 @@
       border-radius: 0;
       margin: 1rem;
       color: $color-black !important;
+
+      @include media-respond-down(sm) {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+      }
 
       &:hover {
         background-color: lighten($light-blue, 20%);
