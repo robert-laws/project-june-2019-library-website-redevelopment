@@ -1,0 +1,23 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Renewing', 'Services')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Renewing', navServices)
+
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Renewing
+
+        h5 General Information
+        p You can renew your library materials by signing into 
+          a(href="https://wrlc-gu.primo.exlibrisgroup.com/discovery/search?vid=01WRLC_GUNIV:QATAR&mode=advanced" target="_blank") your account 
+          | and viewing your library record.
+
+        p Your loans will be listed as well as options to renew.
+
+        p If your materials are overdue, you will not be able to renew them online.
+
+        a(href="https://wrlc-gu.primo.exlibrisgroup.com/discovery/search?vid=01WRLC_GUNIV:QATAR&mode=advanced" class="btn btn-secondary-dark-blue" target="_blank") Sign into Your Account
