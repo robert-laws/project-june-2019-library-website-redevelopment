@@ -1,0 +1,69 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Fines and Fees', 'Services')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Fines and Fees', navServices)
+
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Fines and Fees
+
+        h5 Policy (September 2019)
+        h5 Overdue Fines
+        p GU-Q Library does not collect overdue fines. Overdue fines may appear on the borrower’s record but once the items are returned, all overdue fines are waived. 
+
+        h5 Recalled Items Fines
+        p When an item on loan is requested by another library user, the original borrower will receive an email with a new shorter due date. The item must be returned by that date or a fee of $5.00 US per day will be charged to a maximum of $20.00 US.
+
+        h5 3 Day Loan Fines   
+        p 3 Day loans must be returned on time or a charge of $5.00 US per day will be charged to a maximum of $20.00 US.
+
+        h5 Lost Items Fees
+        p When an item has been overdue for 40 days, the borrower receives a Lost Items Bill with a standard lost item replacement fee of $110 US or the actual cost of the item. The borrower’s library account is blocked and borrowing privileges are suspended. The borrower must come to the Library Service Desk and pay for all lost items before borrowing privileges are reinstated. GU-Q Library charges the actual replacement cost which is often lower than the standard $110 fee, but may be higher. 
+
+        h5 Suspension of Borrowing Privileges
+        p Once a borrower has accrued $100 US in fines and replacement fees, the borrower’s account is blocked and borrowing privileges are suspended until the fines and fees have been paid. 
+
+        h5 Blocking Registration for next term
+        p Students with overdue items or outstanding fines or fees will have their Banner record blocked and will not be able to register for the next term until their account is cleared.
+
+        div(class="content-page__table")
+          h6 Borrowing and Notification Cycle
+          table(class="table table-bordered table-hover third-equal")
+            thead(class="bg-primary text-light")
+              tr
+                th(scope="col") Timeline
+                th(scope="col") Email Notification sent
+                th(scope="col") Explanation
+            tbody
+              tr
+                td Check out Day
+                td Loan Receipt Letter
+                td Lists all items checked at that day
+              tr
+                td 7 days before due date
+                td Courtesy Letter
+                td List of items due in a week
+              tr
+                td Due Date
+                td Due Loans Letter  
+                td List of items due that day
+              tr
+                td 1 day after overdue
+                td Overdue Items  
+                td List of items one day overdue
+              tr
+                td 10 days after overdue
+                td Long overdue items – Notification  #1
+                td List of items 10 day overdue and warning items must be returned, otherwise they will be declared lost
+              tr
+                td 30 days after overdue
+                td Long overdue items – Notification #2
+                td List of items 4 day overdue and warning items must be returned, otherwise they will be declared lost
+              tr
+                td 40 days after overdue
+                td Lost Items Bill
+                td Lists items that have been declared lost and includes Lost item replacement fees. User’s borrowing privileges are suspended at this point.
