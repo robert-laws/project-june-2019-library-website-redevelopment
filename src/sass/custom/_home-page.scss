@@ -2,7 +2,7 @@
   margin: 2rem 0 1rem;
 
   &__search {
-    padding: 1rem;
+    padding: 10px 1rem;
     min-height: 335px;
     background-image: url('/images/home-search-80-bg-2x.jpg');
     background-repeat: no-repeat;
@@ -21,11 +21,15 @@
     }
 
     .lib-search {
-      margin-top: 3rem;
+      margin-top: 1rem;
 
       @include media-respond-down(md) {
         margin-top: 0;
       }
+    }
+
+    .hoyasearch-help {
+      margin-top: 1rem;
     }
 
     .tab-content {
@@ -144,7 +148,7 @@
     }
 
     section a > .alert {
-      padding: 0.4rem 1rem;
+      padding: 0.48rem 1rem;
       font-size: 0.9rem;
       font-weight: 600;
       border-radius: 0;
