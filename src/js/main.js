@@ -114,7 +114,7 @@ function goSearchOther(type, text) {
 
 function getHours() {
   // termNow is either semester or summer
-  var term = "summer";
+  var term = "semester";
   var hours = "";
   var dateNow = new Date();
   var month = dateNow.getMonth() + 1;

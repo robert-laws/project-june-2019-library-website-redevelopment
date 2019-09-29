@@ -1,0 +1,38 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Policies', 'About Us')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")
+        +side-nav('Policies', navAboutUs)
+        
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Request Policy for Main Campus Library Items
+
+        p Due to high shipping costs, all requests for Main Campus items are mediated by library staff before the requests are sent to:
+        
+        ul
+          li check if the item is available locally
+          li determine if purchasing the item is a more cost efficient way to provide access.
+        
+        p Where alternate access can be provided, Main Campus requests are cancelled and the requestor is notified indicating the reason.
+        
+        p
+          strong Item available locally 
+          | – the request will be cancelled
+        
+        ol
+          li Georgetown University owns an e-book edition: the requestor is advised to use the ebook.
+          li GU-Q owns a copy but it is currently signed out: the GU-Q copy will be recalled for the requestor.
+          li Qatar National Library has a copy: the requestor is advised to goto QNL and sign out the book on their personal membership. 
+            em (students and staff only, loan periods are too short for faculty use)
+          li Education City libraries or Qatar University has a copy: GU-Q library staff request the item and arrange delivery to GU-Q. 
+            em (students and staff only, loan periods are too short  for faculty use)
+        
+        p
+          strong Purchasing Item 
+          | – the request will be cancelled
+        
+        p If an item is not available locally and the requested item supports GU-Q curriculum and fits within the Collection Development Policy, library staff determine whether purchasing the item is a more cost effective way to provide access. If so, the item is ordered and the requestor is notified when it arrives. Delivery times for purchased items is very similar to delivery from Main Campus libraries.
