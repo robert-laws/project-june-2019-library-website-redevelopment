@@ -1,0 +1,24 @@
+extends layouts/default.pug
+
+block content
+  +page-header('Policies', 'About Us')
+
+  div(class="container content-page")
+    div(class="row")
+      div(class="col-md-3 content-page__side-nav")        
+        +side-nav('Policies', navAboutUs)
+        
+      div(class="col-md-9 col-sm-12 content-page__content")
+        h4 Honor Thesis Purchase Policy
+
+        p Students writing an honor’s thesis can request that additional English language library materials be purchased up to a maximum of 
+          strong $1000 US
+          |. Students must consult with their subject librarian prior to requesting purchases. Non-English language material requests will be considered on a case by case basis. 
+        
+        p Of this money, up to 
+          strong $300
+          | only can be spent on consumables such as interlibrary loan fees, archive scanning fees, historical society fees. No funding is available for research travel.
+        
+        p The materials will be catalogued before check out to the student and will be retained by the library after the thesis is complete.
+        
+        p All purchases must be made by the library. Students can’t seek reimbursement for individual purchases.
