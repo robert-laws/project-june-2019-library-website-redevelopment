@@ -1,0 +1,15 @@
+mixin image_modal(id, label, img_url, alt)
+  div(class="modal fade" id=id tabindex="-1" role="dialog" aria-labelledby=label aria-hidden="true")
+    div(class="modal-dialog modal-dialog-centered modal-lg" role="document")
+      div(class="modal-content")
+        div(class="modal-header")
+          h5(class="modal-title" id=label)= alt
+          button(type="button" class="close" data-dismiss="modal" aria-label="Close")
+            span(aria-hidden="true") &times;
+        div(class="modal-body")
+          div(class="card" class=size)
+            img(src=img_url class="card-img-top" alt=alt)
+            div(class="card-body")
+              p(class="card-text")= alt
+        div(class="modal-footer")
+          button(type="button" class="btn btn-secondary" data-dismiss="modal") Close
