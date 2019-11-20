@@ -18,6 +18,7 @@ block content
   - var study_fourteen = "/images/study-spaces-14.jpg"
   - var study_fifteen = "/images/study-spaces-15.jpg"
   - var study_sixteen = "/images/study-spaces-16.jpg"
+  - var study_seventeen = "/images/study-spaces-17.jpg"
 
   div(class="container content-page")
     div(class="row")
@@ -29,112 +30,111 @@ block content
 
         +image_modal("study_tables_1", "study_tables_1_label", study_one, "Study Tables")
         +image_modal("study_tables_2", "study_tables_2_label", study_two, "Study Tables with Lighting and Electricity")
-        +image_modal("study_tables_3", "study_tables_3_label", study_three, "Group Study Room")
+        +image_modal("study_tables_3", "study_tables_3_label", study_three, "Group Study Rooms with Technology")
         +image_modal("study_tables_4", "study_tables_4_label", study_four, "Ground Floor Study Carrels")
-        +image_modal("study_tables_5", "study_tables_5_label", study_five, "Knowledge Bar")
-        +image_modal("study_tables_6", "study_tables_6_label", study_six, "1st Floor Study Carrel")
-        +image_modal("study_tables_8", "study_tables_8_label", study_eight, "Study Room - 1B18")
-        +image_modal("study_tables_9", "study_tables_9_label", study_nine, "Study Room - 1B18")
-        +image_modal("study_tables_10", "study_tables_10_label", study_ten, "Study Room - 1B18")
-        +image_modal("study_tables_11", "study_tables_11_label", study_eleven, "Study Room - 1B18")
-        +image_modal("study_tables_12", "study_tables_12_label", study_twelve, "Study Room - 1B18")
-        +image_modal("study_tables_13", "study_tables_13_label", study_thirteen, "Study Room - 1B18")
-        +image_modal("study_tables_14", "study_tables_14_label", study_fourteen, "Study Room - 1B18")
-        +image_modal("study_tables_15", "study_tables_15_label", study_fifteen, "Study Room - 1B18")
-        +image_modal("study_tables_16", "study_tables_16_label", study_sixteen, "Study Room - 1B18")
+        +image_modal("study_tables_5", "study_tables_5_label", study_five, "Ground Floor Knowledge Bar")
+        +image_modal("study_tables_6", "study_tables_6_label", study_six, "1st Floor Study Carrels")
+        +image_modal("study_tables_8", "study_tables_8_label", study_eight, "Study Rooms - 1B11 & 1B12")
+        +image_modal("study_tables_9", "study_tables_9_label", study_nine, "1st Floor - Blue Couch")
+        +image_modal("study_tables_10", "study_tables_10_label", study_ten, "Ground Floor - Blue Couch")
+        +image_modal("study_tables_11", "study_tables_11_label", study_eleven, "Ground Floor - Seating Area")
+        +image_modal("study_tables_12", "study_tables_12_label", study_twelve, "Student Majlis - Room 0B08")
+        +image_modal("study_tables_13", "study_tables_13_label", study_thirteen, "Group Study Room - 1B19")
+        +image_modal("study_tables_15", "study_tables_15_label", study_fifteen, "1st Floor Knowledge Bar")
+        +image_modal("study_tables_16", "study_tables_16_label", study_sixteen, "Creativity Corner")
+        +image_modal("study_tables_17", "study_tables_17_label", study_seventeen, "2nd Floor Study Space - Room 2B04")
 
 
         p The library has several different types of study spaces. All students will be able to find a space that will work for their study needs.
         p The group study rooms on the 1st floor can be reserves using the 
           a(href="https://libcal.sfsq.georgetown.edu/reserve/group") group study room reservation form.
+        hr
+
 
 
         div(class="container")
           div(class="row")
             div(class="col-md-6")
-              h5 Study Tables
-              p On the ground floor are several tables that allow students to spread out their laptop and other study materials.
-              a(href='#' data-toggle="modal" data-target="#study_tables_1")
-                +image(study_one, "Study Tables", "Study Tables", "full")
+              h5 Creativity Corner
+              p Collaborative and learning space that includes a TV, magnetic whiteboards, & study tables.
+              a(href='#' data-toggle="modal" data-target="#study_tables_16")
+                +image(study_sixteen, "Creativity Corner", "Creativity Corner", "full")
+            div(class="col-md-6")
+              h5 Group Study Room - 1B19
+              p 1st floor group study room available without reservation.
+              a(href='#' data-toggle="modal" data-target="#study_tables_13")
+                +image(study_thirteen, "Group Study Room - 1B19", "Group Study Room - 1B19", "full")
+          div(class="row")
+            div(class="col-md-6")
+              h5 Study Rooms - 1B11 & 1B12
+              p Located on the 1st floor, study rooms available without reservation.
+              a(href='#' data-toggle="modal" data-target="#study_tables_8")
+                +image(study_eight, "Study Rooms - 1B11 & 1B12", "Study Rooms - 1B11 & 1B12", "full")
+            div(class="col-md-6")
+              h5 1st Floor Knowledge Bar
+              p Located in a quiet part of the library with power outlets and two computers with Internet connectivity.
+              a(href='#' data-toggle="modal" data-target="#study_tables_15")
+                +image(study_fifteen, "1st Floor Knowledge Bar", "1st Floor Knowledge Bar", "full")
+          div(class="row")
+            div(class="col-md-6")
+              h5 1st Floor - Blue Couch
+              p A relaxing and quiet study space located on the 1st floor.
+              a(href='#' data-toggle="modal" data-target="#study_tables_9")
+                +image(study_nine, "1st Floor - Blue Couch", "1st Floor - Blue Couch", "full")
+            div(class="col-md-6")
+              h5 Student Majlis - Room 0B08
+              p For students who want to study in space that mimics a traditional majlis.
+              a(href='#' data-toggle="modal" data-target="#study_tables_12")
+                +image(study_twelve, "Student Majlis - Room 0B08", "Student Majlis - Room 0B08", "full")
+          div(class="row")
+            div(class="col-md-6")
+              h5 2nd Floor Study Space - Room 2B04
+              p Shared study room accessible to both UCLQ and GU-Q students.
+              a(href='#' data-toggle="modal" data-target="#study_tables_17")
+                +image(study_seventeen, "2nd Floor Study Space - Room 2B04", "2nd Floor Study Space - Room 2B04", "full")
+            div(class="col-md-6")
+              h5 1st Floor Study Carrels
+              p For students looking for individual study space in an extra quiet area, the study carrels located on the 1st floor are available for this purpose.
+              a(href='#' data-toggle="modal" data-target="#study_tables_6")
+                +image(study_six, "1st Floor Study Carrels", "1st Floor Study Carrels", "full")
+          div(class="row")
             div(class="col-md-6")
               h5 Study Tables with Lighting and Electricity
               p Located on the ground floor, these study tables allow students to spread out their laptop and study materials. These tables also have lighting and electrical outlets.
               a(href='#' data-toggle="modal" data-target="#study_tables_2")
                 +image(study_two, "Study Tables with Lighting and Electricity", "Study Tables with Lighting and Electricity", "full")
+            div(class="col-md-6")
+              h5 Ground Floor Knowledge Bar
+              p Located on the ground floor, the knowledge bar allows students to work and spread out their materials and use the electrical outlets.
+              a(href='#' data-toggle="modal" data-target="#study_tables_5")
+                +image(study_five, "Ground Floor Knowledge Bar", "Ground Floor Knowledge Bar", "full")
           div(class="row")
             div(class="col-md-6")
-              h5 Group Study Room
-              p For students who wish to work in groups for two or more, the group study rooms are available on the ground and 1st floors. For students wishing to use a group study room on the 1st floor, please use the room booking system to make a reservation.
+              h5 Group Study Rooms with Technology
+              p For students who wish to work in groups for two or more, rooms 0B12 & 0B13 can be accessed without a reservation. Rooms 1B05, 1B06, 1B07, & 1B08 require a 
+                a(href='http://libcal.sfsq.georgetown.edu/booking/gsr') room reservation
+                |.
               a(href='#' data-toggle="modal" data-target="#study_tables_3")
-                +image(study_three, "Group Study Room", "Group Study Room", "full")
+                +image(study_three, "Group Study Rooms with Technology", "Group Study Rooms with Technology", "full")
+            div(class="col-md-6")
+              h5 Study Tables
+              p On the ground floor are several tables that allow students to spread out their laptop and other study materials.
+              a(href='#' data-toggle="modal" data-target="#study_tables_1")
+                +image(study_one, "Study Tables", "Study Tables", "full")
+          div(class="row")
+            div(class="col-md-6")
+              h5 Ground Floor - Blue Couch
+              p A relaxing study space located on the Ground floor near the journals and magazines.
+              a(href='#' data-toggle="modal" data-target="#study_tables_10")
+                +image(study_ten, "Ground Floor - Blue Couch", "Ground Floor - Blue Couch", "full")
+            div(class="col-md-6")
+              h5 Ground Floor - Seating Area
+              p Relaxing seating near the DVDs and classroom 0B07.
+              a(href='#' data-toggle="modal" data-target="#study_tables_11")
+                +image(study_eleven, "Ground Floor - Seating Area", "Ground Floor - Seating Area", "full")
+          div(class="row")
             div(class="col-md-6")
               h5 Ground Floor Study Carrels
               p For individuals who wish to study with minimal distractions, the study carrels on the ground floor are available.
               a(href='#' data-toggle="modal" data-target="#study_tables_4")
                 +image(study_four, "Ground Floor Study Carrels", "Ground Floor Study Carrels", "full")
-          div(class="row")
-            div(class="col-md-6")
-              h5 Knowledge Bars
-              p Located on the ground floor and the 1st floor, the knowledge bars allows students to work and spread out their materials.
-              a(href='#' data-toggle="modal" data-target="#study_tables_5")
-                +image(study_five, "Knowledge Bar", "Knowledge Bar", "full")
-            div(class="col-md-6")
-              h5 1st Floor Study Carrel
-              p For students looking for individual study space in an extra quiet area, the study carrels located on the 1st floor are available for this purpose.
-              a(href='#' data-toggle="modal" data-target="#study_tables_6")
-                +image(study_six, "1st Floor Study Carrel", "1st Floor Study Carrel", "full")
-          div(class="row")
-            div(class="col-md-6")
-              h5 Study Room - 1B18
-              p Located on the 1st floor, room 1B18 is available for students to work as a group.
-              a(href='#' data-toggle="modal" data-target="#study_tables_8")
-                +image(study_eight, "Study Room - 1B18", "Study Room - 1B18", "full")
-            div(class="col-md-6")
-              h5 1st Floor Study Carrel
-              p For students looking for individual study space in an extra quiet area, the study carrels located on the 1st floor are available for this purpose.
-              a(href='#' data-toggle="modal" data-target="#study_tables_9")
-                +image(study_nine, "1st Floor Study Carrel", "1st Floor Study Carrel", "full")
-          div(class="row")
-            div(class="col-md-6")
-              h5 Study Room - 1B18
-              p Located on the 1st floor, room 1B18 is available for students to work as a group.
-              a(href='#' data-toggle="modal" data-target="#study_tables_10")
-                +image(study_ten, "Study Room - 1B18", "Study Room - 1B18", "full")
-            div(class="col-md-6")
-              h5 1st Floor Study Carrel
-              p For students looking for individual study space in an extra quiet area, the study carrels located on the 1st floor are available for this purpose.
-              a(href='#' data-toggle="modal" data-target="#study_tables_11")
-                +image(study_eleven, "1st Floor Study Carrel", "1st Floor Study Carrel", "full")
-          div(class="row")
-            div(class="col-md-6")
-              h5 Study Room - 1B18
-              p Located on the 1st floor, room 1B18 is available for students to work as a group.
-              a(href='#' data-toggle="modal" data-target="#study_tables_12")
-                +image(study_twelve, "Study Room - 1B18", "Study Room - 1B18", "full")
-            div(class="col-md-6")
-              h5 1st Floor Study Carrel
-              p For students looking for individual study space in an extra quiet area, the study carrels located on the 1st floor are available for this purpose.
-              a(href='#' data-toggle="modal" data-target="#study_tables_13")
-                +image(study_thirteen, "1st Floor Study Carrel", "1st Floor Study Carrel", "full")
-          div(class="row")
-            div(class="col-md-6")
-              h5 Study Room - 1B18
-              p Located on the 1st floor, room 1B18 is available for students to work as a group.
-              a(href='#' data-toggle="modal" data-target="#study_tables_14")
-                +image(study_fourteen, "Study Room - 1B18", "Study Room - 1B18", "full")
-            div(class="col-md-6")
-              h5 1st Floor Study Carrel
-              p For students looking for individual study space in an extra quiet area, the study carrels located on the 1st floor are available for this purpose.
-              a(href='#' data-toggle="modal" data-target="#study_tables_15")
-                +image(study_fifteen, "1st Floor Study Carrel", "1st Floor Study Carrel", "full")
-          div(class="row")
-            div(class="col-md-6")
-              h5 Study Room - 1B18
-              p Located on the 1st floor, room 1B18 is available for students to work as a group.
-              a(href='#' data-toggle="modal" data-target="#study_tables_16")
-                +image(study_sixteen, "Study Room - 1B18", "Study Room - 1B18", "full")
-            //- div(class="col-md-6")
-            //-   h5 1st Floor Study Carrel
-            //-   p For students looking for individual study space in an extra quiet area, the study carrels located on the 1st floor are available for this purpose.
-            //-   a(href='#' data-toggle="modal" data-target="#study_tables_9")
-            //-     +image(study_nine, "1st Floor Study Carrel", "1st Floor Study Carrel", "full")
