@@ -1,5 +1,7 @@
 # Project - Library Website Redevelopment
 
+## Introduction
+
 The library website for the Georgetown University in Qatar library is being redeveloped in the Spring of 2019. The existing version has become outdated and has problems with its responsiveness for mobile users. The projects introduces an opportunity to upgrade the website and use newer technologies such as modern Javascript, Bootstrap 4 CSS-Framework, and features from Drupal 8. Students and faculty make constant use of the website and it is essential for their success at the university.
 
 ### The Challenge
